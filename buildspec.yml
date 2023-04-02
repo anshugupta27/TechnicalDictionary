@@ -10,8 +10,10 @@ phases:
     commands:
       - cd ..
       - npm install
+      - cd technical-dictionary-ui
       - npm run build
-      - cp -r technical-dictionary-ui/build/* build/
+      - cd ..
+      - npm run build
 artifacts:
   files:
     - technical-dictionary-ui/build/**/*

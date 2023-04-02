@@ -5,7 +5,7 @@
     "scripts": {
       "start": "node index.js",
       "dev": "nodemon index.js",
-      "build": "echo 'Running build script...'",
+      "build": "cd technical-dictionary-ui && npm install && npm run build",
       "test": "react-scripts test",
       "eject": "react-scripts eject",
       "deploy": "eb deploy"

@@ -4,12 +4,11 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
+      - npm install
       - cd technical-dictionary-ui
       - npm install
   build:
     commands:
-      - cd ..
-      - npm install
       - cd technical-dictionary-ui
       - npm run build
       - cd ..

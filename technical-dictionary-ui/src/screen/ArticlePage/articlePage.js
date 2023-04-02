@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CardComponent } from "../../components";
 import Row from "react-bootstrap/Row";
 import { useLocation } from "react-router-dom";
-
+// TODO: new artcie with new topic not working
 const ArticlePage = () => {
   const location = useLocation();
   const body = location.state.body;

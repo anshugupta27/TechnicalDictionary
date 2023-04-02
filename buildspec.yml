@@ -1,13 +1,17 @@
 version: 0.2
-
 phases:
-  pre_build:
+  install:
+    runtime-versions:
+      nodejs: 14
     commands:
+      - cd node
+      - npm install
+      - cd ../react
       - npm install
   build:
     commands:
+      - cd react
       - npm run build
-  post_build:
-    commands:
-      - aws s3 cp --recursive ./build s3://www.oncloudconsulting/
-      - aws cloudfront create-invalidation --distribution-id EBSCDGGY05VD1 --pTH /\*
+artifacts:
+  files:
+    - react/build/**/*

@@ -5,12 +5,13 @@ phases:
       nodejs: 16
     commands:
       - npm install
-      - cd ../technical-dictionary-ui
+      - cd technical-dictionary-ui
       - npm install
   build:
     commands:
+      - cd ..
       - npm run build
-      - cd ../technical-dictionary-ui
+      - cd technical-dictionary-ui
       - npm run build
 artifacts:
   files:

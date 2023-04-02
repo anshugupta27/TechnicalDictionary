@@ -9,7 +9,6 @@ phases:
       - npm install
   build:
     commands:
-      - cd technical-dictionary-ui
       - npm run build
       - cd ..
       - npm run build

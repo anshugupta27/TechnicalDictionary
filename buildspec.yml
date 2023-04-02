@@ -10,7 +10,7 @@ phases:
       - npm install
   build:
     commands:
-      - cd technical-dictionary-bff
+      - cd ../technical-dictionary-bff
       - npm run build
       - cd ../technical-dictionary-ui
       - npm run build
